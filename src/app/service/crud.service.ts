@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Admin } from '../Entity/Admin.Entity';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -14,5 +15,12 @@ export class CrudService {
   // admin
   addAdmin(admin: Admin) {
     return this.http.post<any>(this.apiUrl + "/admin", admin);
+  }
+  onDeleteAdmin(id : number){
+    const url =`${this.apiUrl+"/admin"}/${id}`
+    return this.http.delete(url)
+  }
+  getAdmin(): Observable<Admin[]>{
+    return this.http.get<Admin[]>(this.apiUrl + "/admin");
   }
 }

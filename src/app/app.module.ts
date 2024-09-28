@@ -8,13 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { ListAdminComponent } from './list-admin/list-admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddAdminComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    ListAdminComponent
   ],
   imports: [
     BrowserModule,
