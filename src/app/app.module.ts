@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListAdminComponent } from './list-admin/list-admin.component';
+import { ModifyAdminComponent } from './modify-admin/modify-admin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListAdminComponent } from './list-admin/list-admin.component';
     AddAdminComponent,
     HeaderComponent,
     MenuComponent,
-    ListAdminComponent
+    ListAdminComponent,
+    ModifyAdminComponent
   ],
   imports: [
     BrowserModule,

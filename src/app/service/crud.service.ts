@@ -23,4 +23,12 @@ export class CrudService {
   getAdmin(): Observable<Admin[]>{
     return this.http.get<Admin[]>(this.apiUrl + "/admin");
   }
+  updateAdmin(id:number,admin:Admin){
+    const url= `${this.apiUrl + "/admin"}/${id}`;
+    return this.http.put<any>(url, admin);
+  }
+  findAdminById(id: number): Observable<Admin> {
+    const url = `${this.apiUrl + "/admin"}/${id}`;
+    return this.http.get<Admin>(url);
+  }
 }

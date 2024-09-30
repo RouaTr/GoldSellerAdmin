@@ -2,16 +2,15 @@
 <html lang="en">
 
 
-<!-- Mirrored from techzaa.getappui.com/velonic/layouts/tables-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2024 08:25:25 GMT -->
+<!-- Mirrored from techzaa.getappui.com/velonic/layouts/form-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2024 08:25:14 GMT -->
 
 <head>
   <meta charset="utf-8" />
-  <title>List OF Administrators </title>
+  <title>Form Validation | Velonic - Bootstrap 5 Admin & Dashboard Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
   <meta content="Techzaa" name="author" />
 
-  <!-- App favicon -->
 
 </head>
 
@@ -20,13 +19,14 @@
   <div class="wrapper">
 
 
-
     <app-header></app-header>
 
 
     <app-menu></app-menu>
 
-
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
 
     <div class="content-page">
       <div class="content">
@@ -39,54 +39,75 @@
             <div class="col-12">
               <div class="page-title-box">
 
-                <h4 class="page-title">list of Administrators </h4>
+                <h4 class="page-title">Modify Administrator :</h4>
               </div>
             </div>
           </div>
           <!-- end page title -->
 
           <div class="row">
-            <div class="col-12">
+
+            <div class="col-lg-6">
               <div class="card">
-                <div class="card-body">
-                  <div class="responsive-table-plugin">
-                    <div class="table-rep-plugin">
-                      <div class="table-responsive" data-pattern="priority-columns">
-                        <table id="tech-companies-1" class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th>ID</th>
-                              <th data-priority="1">first Name</th>
-                              <th data-priority="3">last Name</th>
-                              <th data-priority="1">email</th>
-                              <th data-priority="3">Role</th>
-                              <th data-priority="3">Action</th>
+                <div class="card-header">
 
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr *ngFor="let admin of listAdmin">
-                              <th><span class="co-name">{{admin.id}}</span></th>
-                              <td>{{admin.name}}</td>
-                              <td>{{admin.lastName}}</td>
-                              <td>{{admin.email}}</td>
-                              <td>{{admin.role}}</td>
-                              <td><a href="/updateAdmin/{{admin.id}}" class="btn btn-success">update</a>
-                                <button (click)="Deleteadmin(admin)" type="submit"
-                                  class="btn btn-danger">supprimer</button>
-                              </td>
 
-                            </tr>
-
-                          </tbody>
-                        </table>
-                      </div> <!-- end .table-responsive -->
-
-                    </div> <!-- end .table-rep-plugin-->
-                  </div> <!-- end .responsive-table-plugin-->
                 </div>
-              </div> <!-- end card -->
-            </div> <!-- end col -->
+                <div class="card-body">
+                  <form (ngSubmit)="updateAdmin()" [formGroup]="updateForm">
+                    <div class="position-relative mb-3">
+                      <label class="form-label" for="validationTooltip01">First name</label>
+                      <input type="text" class="form-control" id="validationTooltip01" placeholder="name"
+                        value="first name" required formControlName="name">
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                      <div class="invalid-tooltip">
+                        Please enter first name.
+                      </div>
+                    </div>
+                    <div class="position-relative mb-3">
+                      <label class="form-label" for="validationTooltip02">Last name</label>
+                      <input type="text" class="form-control" id="validationTooltip02" placeholder="LastName"
+                        value="last name" required formControlName="lastName">
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                      <div class="invalid-tooltip">
+                        Please enter last name.
+                      </div>
+                    </div>
+                    <div class="position-relative mb-3">
+                      <label class="form-label" for="validationTooltipUsername">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">email</span>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="email"
+                          formControlName="email" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid email.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="position-relative mb-3">
+                      <label class="form-label" for="validationTooltip03">Password</label>
+                      <input type="password" class="form-control" id="validationTooltip03" placeholder="Password"
+                        required formControlName="password">
+
+                    </div>
+                    <div class="position-relative mb-3">
+                      <select class="form-select" formControlName="role">
+                        <option selected>Role</option>
+                        <option value="SuperAdmin">SuperAdmin</option>
+                        <option value="Admin">Admin</option>
+
+                      </select>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </form>
+                </div> <!-- end card-body-->
+              </div> <!-- end card-->
+            </div> <!-- end col-->
           </div>
           <!-- end row -->
 
@@ -317,10 +338,9 @@
   </div>
 
 
-
 </body>
 
 
-<!-- Mirrored from techzaa.getappui.com/velonic/layouts/tables-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2024 08:25:26 GMT -->
+<!-- Mirrored from techzaa.getappui.com/velonic/layouts/form-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2024 08:25:14 GMT -->
 
 </html>
