@@ -1,71 +1,110 @@
 <div class="leftside-menu">
-
-
-
-
   <div class="h-100" id="leftside-menu-container" data-simplebar>
-      <!--- Sidemenu -->
-      <ul class="side-nav">
+    <!--- Sidemenu -->
+    <ul class="side-nav">
 
-          <li class="side-nav-title">Main</li>
+      <li class="side-nav-title">Main</li>
 
-          <li class="side-nav-item">
-              <a href="index.html" class="side-nav-link">
-                  <i class="ri-dashboard-3-line"></i>
-                  <span class="badge bg-success float-end">9+</span>
-                  <span> Dashboard </span>
-              </a>
-          </li>
+      <li class="side-nav-item">
+        <a routerLink="" class="side-nav-link">
+          <i class="ri-dashboard-3-line"></i>
+          <span class="badge bg-success float-end">9+</span>
+          <span> Dashboard </span>
+        </a>
+      </li>
 
-          <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
-                  <i class="ri-pages-line"></i>
-                  <span> Administrator </span>
-                  <span class="menu-arrow"></span>
-              </a>
+      <li class="side-nav-item">
+        <a data-bs-toggle="collapse" aria-expanded="false" aria-controls="adminMenu"
+          class="side-nav-link">
+          <i class="ri-pages-line"></i>
+          <span> Administrator </span>
+          <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" >
+          <ul class="side-nav-second-level">
+            <li>
+              <a href="/addAdmin">Add New Admin</a>
+            </li>
+            <li>
+              <a href="/listAdmin">List Of Admins</a>
+            </li>
+          </ul>
+        </div>
+      </li>
 
-          </li>
+      <li class="side-nav-item">
+        <a data-bs-toggle="collapse" href="#clientMenu" aria-expanded="false" aria-controls="clientMenu"
+          class="side-nav-link">
+          <i class="ri-group-2-line"></i>
+          <span> Clients</span>
+          <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" id="clientMenu">
+          <ul class="side-nav-second-level">
+            <li>
+              <a href="add-client.html">Add New Client</a>
+            </li>
+            <li>
+              <a href="list-clients.html">List Of Clients</a>
+            </li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
-                  <i class="ri-group-2-line"></i>
-                  <span> Client</span>
-                  <span class="menu-arrow"></span>
-              </a>
+      <li class="side-nav-item">
+        <a data-bs-toggle="collapse" href="#orderMenu" aria-expanded="false" aria-controls="orderMenu"
+          class="side-nav-link">
+          <i class="ri-shopping-cart-line"></i>
+          <span> Orders</span>
+          <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" id="orderMenu">
+          <ul class="side-nav-second-level">
+            <li>
+              <a href="list-orders.html">List Of Orders</a>
+            </li>
+          </ul>
+        </div>
+      </li>
 
-          </li>
+      <li class="side-nav-item">
+        <a data-bs-toggle="collapse" href="#productMenu" aria-expanded="false" aria-controls="productMenu"
+          class="side-nav-link">
+          <i class="ri-briefcase-line"></i>
+          <span> Products</span>
+          <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" id="productMenu">
+          <ul class="side-nav-second-level">
+            <li>
+              <a href="add-product.html">Add New Product</a>
+            </li>
+            <li>
+              <a href="list-products.html">List Of Products</a>
+            </li>
+          </ul>
+        </div>
+      </li>
 
-          <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
-                  <i class="ri-layout-line"></i>
-                  <span class="badge bg-warning float-end">New</span>
-                  <span> Products</span>
-              </a>
+      <li class="side-nav-item">
+        <a data-bs-toggle="collapse" href="#contactMenu" aria-expanded="false" aria-controls="contactMenu"
+          class="side-nav-link">
+          <i class="ri-briefcase-line"></i>
+          <span> Contact</span>
+          <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" id="contactMenu">
+          <ul class="side-nav-second-level">
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </li>
 
-          </li>
+    </ul>
+    <!--- End Sidemenu -->
 
-
-
-          <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
-                  <i class="ri-briefcase-line"></i>
-                  <span>Contact</span>
-                  <span class="menu-arrow"></span>
-              </a>
-
-          </li>
-
-
-
-
-
-
-
-
-
-      </ul>
-      <!--- End Sidemenu -->
-
-      <div class="clearfix"></div>
+    <div class="clearfix"></div>
   </div>
 </div>

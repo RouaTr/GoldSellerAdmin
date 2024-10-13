@@ -52,7 +52,7 @@ constructor(private service:CrudService,private router :Router,private fb:FormBu
        Administrator sent successfully !
       </div>`
 
-        this.router.navigate(['/listAdmin']);
+        this.router.navigate(['']);
       },
       err=>{
         console.log(err);

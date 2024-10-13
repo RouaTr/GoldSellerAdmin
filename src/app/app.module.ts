@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListAdminComponent } from './list-admin/list-admin.component';
 import { ModifyAdminComponent } from './modify-admin/modify-admin.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ModifyAdminComponent } from './modify-admin/modify-admin.component';
     HeaderComponent,
     MenuComponent,
     ListAdminComponent,
-    ModifyAdminComponent
+    ModifyAdminComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
