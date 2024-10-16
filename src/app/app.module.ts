@@ -12,6 +12,7 @@ import { ListAdminComponent } from './list-admin/list-admin.component';
 import { ModifyAdminComponent } from './modify-admin/modify-admin.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     ListAdminComponent,
     ModifyAdminComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

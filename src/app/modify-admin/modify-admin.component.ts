@@ -97,7 +97,7 @@ updateAdmin(){
   console.log(data);
   this.service.updateAdmin(this.id, admin).subscribe((res) => {
     console.log(res);
-    this.route.navigate(['/']);
+    this.route.navigate(['/listAdmin']);
   });
 }
 }

@@ -1,0 +1,21 @@
+.wrapper
+{
+  background-color: rgb(249, 236, 202);
+}
+.card{
+  background-color: rgb(226, 220, 199);
+}
+.col-lg-6input{
+  background-color: rgb(249, 245, 232);
+}
+button{
+  background-color:rgb(226, 167, 72);
+
+}
+
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
